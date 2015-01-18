@@ -1,0 +1,15 @@
+---
+title: "latex only"
+author: "Michael J. McCann"
+date: "Wednesday, January 14, 2015"
+output:
+  html_document:
+    mathjax: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+---
+
+Here is a test equation
+---------
+
+$$
+X_{1},X_{2},...,X_{n} \sim N(\mu,\sigma^{2})
+$$

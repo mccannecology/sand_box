@@ -1,0 +1,27 @@
+---
+title: "shiny in markdown test"
+author: "Michael J. McCann"
+date: "Wednesday, January 14, 2015"
+output: html_document
+runtime: shiny
+---
+
+1st Section
+-----------
+static histogram
+```{r}
+x <- rnorm(1000,0,1)
+hist(x)
+```
+
+
+Shiny section 
+-----------
+dynamic test
+```{r, echo = FALSE}
+numericInput("rows", "How many cars?", 5)
+
+renderTable({
+  head(cars, input$rows)
+})
+```

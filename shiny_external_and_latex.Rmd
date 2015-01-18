@@ -1,0 +1,28 @@
+---
+title: "shiny_external_and_latex"
+author: "Michael J. McCann"
+date: "Thursday, January 15, 2015"
+output: html_document
+---
+This is using the approach found [here](http://rmarkdown.rstudio.com/authoring_shiny.html)
+
+
+
+```{r load_packages, include=FALSE}
+library(shiny)
+```
+
+Here is a test equation
+---------
+
+$$
+X_{1},X_{2},...,X_{n} \sim N(\mu,\sigma^{2})
+$$
+
+
+Here is a test shiny app
+---------
+```{r, echo = FALSE}
+source('shiny_app_example.r')
+shiny_app_example()
+```
